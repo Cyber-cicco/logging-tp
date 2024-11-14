@@ -8,6 +8,8 @@ public class AppService {
     private static Logger log = LoggerFactory.getLogger(AppService.class);
 
     public void exectuer(String param) {
-        log.debug("Traitement 1 : {}", param);
+        for (int i = 0; i < 10_000; i++){
+            log.debug("Traitement 1 : {}", param);
+        }
     }
 }
